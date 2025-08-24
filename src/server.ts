@@ -31,7 +31,7 @@ app.use(cors({
       }));
 app.use(express.json());
 
-app.use("/api/v1", mainRouter);
+app.use(mainRouter);
 
 app.listen(PORT, () => {
   console.log(`Port is running at ${PORT}`);
